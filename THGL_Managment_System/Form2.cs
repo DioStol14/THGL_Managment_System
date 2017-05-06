@@ -80,5 +80,10 @@ namespace THGL_Managment_System
             epeksergasiaPelati.MdiParent = this;
             epeksergasiaPelati.Show();
         }
+
+        private void mdiForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

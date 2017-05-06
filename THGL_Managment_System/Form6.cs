@@ -16,5 +16,13 @@ namespace THGL_Managment_System
         {
             InitializeComponent();
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 4; i++)
+            panel1.Controls[i].Text = "";
+            bunifuDropdown1.Controls[0].Text="";
+         
+        }
     }
 }
