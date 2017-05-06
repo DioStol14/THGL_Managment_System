@@ -59,5 +59,19 @@ namespace THGL_Managment_System
             //entryToolStripMenuItem.Enabled = false; to exeis sto menu katwxirwsi an einai anagkaio balto kai gia to menu Σχετικα με εμας
 
         }
+        OpenFileDialog fop = new OpenFileDialog();
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fop.Filter = "THGL|*.thgl";
+            fop.ShowDialog();
+        }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog dialog = new FontDialog();
+            dialog.ShowDialog();
+            menuStrip1.Font = dialog.Font;
+           
+        }
     }
 }
