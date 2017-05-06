@@ -27,5 +27,11 @@ namespace THGL_Managment_System
                
            
         }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Βοήθεια","Παρακαλώ  χρησιμοποιήστε το barcode scanner για να εισάγετε νέο προϊον", MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+        }
     }
 }

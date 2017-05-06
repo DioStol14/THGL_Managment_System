@@ -124,7 +124,7 @@
             this.bunifuiOSSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuiOSSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuiOSSwitch1.Location = new System.Drawing.Point(160, 278);
-            this.bunifuiOSSwitch1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuiOSSwitch1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuiOSSwitch1.Name = "bunifuiOSSwitch1";
             this.bunifuiOSSwitch1.OffColor = System.Drawing.Color.Gray;
             this.bunifuiOSSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(202)))), ((int)(((byte)(94)))));
@@ -207,6 +207,7 @@
             this.bunifuThinButton23.Size = new System.Drawing.Size(439, 39);
             this.bunifuThinButton23.TabIndex = 14;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
             // 
             // panel1
             // 
@@ -338,8 +339,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
             this.Text = "Προσθήκη Προϊόντος";
             this.panel1.ResumeLayout(false);

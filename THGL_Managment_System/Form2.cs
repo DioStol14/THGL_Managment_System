@@ -85,5 +85,10 @@ namespace THGL_Managment_System
         {
             Application.Exit();
         }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

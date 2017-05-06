@@ -16,5 +16,11 @@ namespace THGL_Managment_System
         {
             InitializeComponent();
         }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+
+            
+        }
     }
 }
