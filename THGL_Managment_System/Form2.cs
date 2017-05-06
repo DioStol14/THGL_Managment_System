@@ -73,5 +73,12 @@ namespace THGL_Managment_System
             menuStrip1.Font = dialog.Font;
            
         }
+
+        private void επεξεργασίαΠελατώνToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form8 epeksergasiaPelati = new Form8();
+            epeksergasiaPelati.MdiParent = this;
+            epeksergasiaPelati.Show();
+        }
     }
 }
