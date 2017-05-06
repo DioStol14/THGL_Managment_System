@@ -42,12 +42,14 @@ namespace THGL_Managment_System
             pelatis.MdiParent = this;
             pelatis.Show();
         }
-
-        private void entryToolStripMenuItem_Click(object sender, EventArgs e)
+        
+        public void entryToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             Form7 kataxwrisi = new Form7();
             kataxwrisi.MdiParent = this;
             kataxwrisi.Show();
+            kataxwrisi.parent = this;
             entryToolStripMenuItem.Enabled = false;
         }
 
@@ -86,9 +88,6 @@ namespace THGL_Managment_System
             Application.Exit();
         }
 
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
     }
 }

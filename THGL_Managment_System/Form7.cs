@@ -70,5 +70,16 @@ namespace THGL_Managment_System
             bunifuMetroTextbox1.Text = "0";
             posothta = 0;
         }
+        public mdiForm parent = null;
+        private void Form7_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            parent.entryToolStripMenuItem.Enabled = true;
+        }
+
+        private void bunifuThinButton25_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
     }
 }
