@@ -118,7 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Custom-Icon-Design-Flatastic-2-Product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Custom-Icon-Design-Flatastic-2-Product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Custom-Icon-Design-Pretty-Office-2-FAQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Custom-Icon-Design-Pretty-Office-2-FAQ.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oxygen-Icons.org-Oxygen-Actions-edit-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Oxygen-Icons.org-Oxygen-Actions-edit-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Photoshopedia-Xedia-Recycle-Bin-Full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photoshopedia-Xedia-Recycle-Bin-Full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Visualpharm-Must-Have-Redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Visualpharm-Must-Have-Redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="save-environment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\save-environment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gakuseisean-Ivista-2-Misc-New-Database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Gakuseisean-Ivista-2-Misc-New-Database.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Visualpharm-Must-Have-Undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Visualpharm-Must-Have-Undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oxygen-Icons.org-Oxygen-Apps-preferences-desktop-font" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Oxygen-Icons.org-Oxygen-Apps-preferences-desktop-font.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Designcontest-Ecommerce-Business-Company-building" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Designcontest-Ecommerce-Business-Company-building.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dakirby309-Windows-8-Metro-Other-Power-Shut-Down-Metro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Dakirby309-Windows-8-Metro-Other-Power-Shut-Down-Metro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Awicons-Vista-Artistic-Chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Awicons-Vista-Artistic-Chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons-Land-Vista-People-Office-Customer-Male-Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons-Land-Vista-People-Office-Customer-Male-Light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oxygen-Icons.org-Oxygen-Actions-help-about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Oxygen-Icons.org-Oxygen-Actions-help-about.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

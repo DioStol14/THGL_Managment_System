@@ -74,6 +74,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +105,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="save-environment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gakuseisean-Ivista-2-Misc-New-Database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Custom-Icon-Design-Flatastic-2-Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Oxygen-Icons.org-Oxygen-Actions-edit-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dakirby309-Windows-8-Metro-Other-Power-Shut-Down-Metro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Designcontest-Ecommerce-Business-Company-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Custom-Icon-Design-Pretty-Office-2-FAQ.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Oxygen-Icons.org-Oxygen-Actions-help-about.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
