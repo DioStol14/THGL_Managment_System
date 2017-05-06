@@ -63,6 +63,16 @@ namespace THGL_Managment_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1494021467_plus_add_green {
+            get {
+                object obj = ResourceManager.GetObject("1494021467_plus_add_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Awicons_Vista_Artistic_Chart {
             get {
                 object obj = ResourceManager.GetObject("Awicons-Vista-Artistic-Chart", resourceCulture);
