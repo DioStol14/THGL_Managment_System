@@ -162,7 +162,7 @@
             this.bunifuMaterialTextbox1.isPassword = false;
             this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox1.LineThickness = 3;
             this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(196, 1);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
@@ -182,7 +182,7 @@
             this.bunifuMaterialTextbox2.isPassword = false;
             this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox2.LineThickness = 3;
             this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(196, 42);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
@@ -202,7 +202,7 @@
             this.bunifuMaterialTextbox3.isPassword = false;
             this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox3.LineThickness = 3;
             this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(196, 83);
             this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
@@ -222,7 +222,7 @@
             this.bunifuMaterialTextbox4.isPassword = false;
             this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox4.LineThickness = 3;
             this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(196, 124);
             this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
@@ -242,7 +242,7 @@
             this.bunifuMaterialTextbox5.isPassword = false;
             this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox5.LineThickness = 3;
             this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(196, 165);
             this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
@@ -262,7 +262,7 @@
             this.bunifuMaterialTextbox6.isPassword = false;
             this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox6.LineThickness = 3;
             this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(196, 206);
             this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
@@ -282,7 +282,7 @@
             this.bunifuMaterialTextbox7.isPassword = false;
             this.bunifuMaterialTextbox7.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox7.LineThickness = 3;
             this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(196, 247);
             this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
@@ -302,7 +302,7 @@
             this.bunifuMaterialTextbox8.isPassword = false;
             this.bunifuMaterialTextbox8.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox8.LineThickness = 3;
             this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(196, 288);
             this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(4);
@@ -322,7 +322,7 @@
             this.bunifuMaterialTextbox9.isPassword = false;
             this.bunifuMaterialTextbox9.LineFocusedColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox9.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox9.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox9.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox9.LineThickness = 3;
             this.bunifuMaterialTextbox9.Location = new System.Drawing.Point(196, 329);
             this.bunifuMaterialTextbox9.Margin = new System.Windows.Forms.Padding(4);
