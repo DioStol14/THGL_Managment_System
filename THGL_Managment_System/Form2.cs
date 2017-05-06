@@ -88,6 +88,26 @@ namespace THGL_Managment_System
             Application.Exit();
         }
 
-       
+        private void καλύτεροςΠελάτηςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form9 kaliterosPelatis = new Form9();
+            kaliterosPelatis.MdiParent = this;
+            kaliterosPelatis.Show();
+        }
+
+        private void καλύτερεςΠόλοιToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form10 kaliteresPoleis = new Form10();
+            kaliteresPoleis.MdiParent = this;
+            kaliteresPoleis.Show();
+
+        }
+
+        private void κουπόνιαToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 kouponia = new Form11();
+            kouponia.MdiParent = this;
+            kouponia.Show();
+        }
     }
 }
