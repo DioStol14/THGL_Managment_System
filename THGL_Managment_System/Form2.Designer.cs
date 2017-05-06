@@ -122,28 +122,29 @@
             // 
             this.entryToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Custom_Icon_Design_Flatastic_4_Shopping_cart_insert;
             this.entryToolStripMenuItem.Name = "entryToolStripMenuItem";
-            this.entryToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.entryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.entryToolStripMenuItem.Text = "Καταχώρηση";
+            this.entryToolStripMenuItem.Click += new System.EventHandler(this.entryToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Icondesigner_net_Hyperion_Downloads;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Άνοιγμα";
             // 
             // closeFormsToolStripMenuItem
             // 
             this.closeFormsToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_edit_delete;
             this.closeFormsToolStripMenuItem.Name = "closeFormsToolStripMenuItem";
-            this.closeFormsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.closeFormsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.closeFormsToolStripMenuItem.Text = "Κλείσιμο";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Dakirby309_Windows_8_Metro_Other_Power_Shut_Down_Metro;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Έξοδος";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
