@@ -106,6 +106,60 @@
   <ItemGroup>
     <None Include="save-environment.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Vista-People-Office-Customer-Male-Light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icondesigner.net-Hyperion-Downloads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Shopping-cart-insert.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-edit-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dakirby309-Windows-8-Metro-Other-Power-Shut-Down-Metro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Apps-preferences-desktop-font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visualpharm-Must-Have-Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visualpharm-Must-Have-Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Vista-People-Office-Customer-Male-Light1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-user-group-new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Apps-system-software-update.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-2-Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gakuseisean-Ivista-2-Misc-New-Database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-7-Product-documentation.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Awicons-Vista-Artistic-Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designcontest-Ecommerce-Business-Company-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-2-FAQ.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-help-about.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -24,9 +24,7 @@ namespace THGL_Managment_System
 
         private void νέοΠροϊόνToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            newProductForm proion = new newProductForm();
-            proion.MdiParent = this;
-            proion.Show();
+            
         }
     }
 }
