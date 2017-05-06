@@ -22,9 +22,27 @@ namespace THGL_Managment_System
             Application.Exit();
         }
 
-        private void νέοΠροϊόνToolStripMenuItem_Click(object sender, EventArgs e)
+      
+
+        private void νέοΠροϊόνToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            
+            Form5 proion = new Form5();
+            proion.MdiParent = this;
+            proion.Show();
+        }
+
+        private void howToToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 boitheia = new Form6();
+            boitheia.MdiParent = this;
+            boitheia.Show();
+        }
+
+        private void προσθήκηToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 pelatis = new Form3();
+            pelatis.MdiParent = this;
+            pelatis.Show();
         }
     }
 }
