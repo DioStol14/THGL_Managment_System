@@ -190,6 +190,7 @@
             this.bunifuThinButton23.Size = new System.Drawing.Size(423, 41);
             this.bunifuThinButton23.TabIndex = 14;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
             // 
             // panel1
             // 
