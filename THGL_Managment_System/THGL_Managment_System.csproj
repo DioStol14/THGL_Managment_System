@@ -200,6 +200,9 @@
     <None Include="Resources\s68_think_globally_act_locally_sticker_0.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1494021467_plus_add_green.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Resources\map.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

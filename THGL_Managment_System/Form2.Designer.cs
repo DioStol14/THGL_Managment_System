@@ -176,7 +176,7 @@
             this.επεξεργασίαΠελατώνToolStripMenuItem});
             this.customerToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Icons_Land_Vista_People_Office_Customer_Male_Light1;
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.customerToolStripMenuItem.Text = "Πελάτες";
             // 
             // προσθήκηToolStripMenuItem
@@ -201,7 +201,7 @@
             this.επεξεργασίαΠροϊόντοςToolStripMenuItem});
             this.productToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Custom_Icon_Design_Flatastic_2_Product;
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.productToolStripMenuItem.Text = "Προϊόν";
             // 
             // νέοΠροϊόνToolStripMenuItem
@@ -225,7 +225,7 @@
             this.καλύτεροςΠελάτηςToolStripMenuItem});
             this.statisticToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Awicons_Vista_Artistic_Chart;
             this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
-            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.statisticToolStripMenuItem.Text = "Στατιστικά";
             // 
             // καλύτεροςΠελάτηςToolStripMenuItem
@@ -238,7 +238,7 @@
             // 
             this.storesToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Designcontest_Ecommerce_Business_Company_building;
             this.storesToolStripMenuItem.Name = "storesToolStripMenuItem";
-            this.storesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.storesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.storesToolStripMenuItem.Text = "Καταστήματα";
             // 
             // howToToolStripMenuItem
@@ -255,6 +255,7 @@
             this.tHGLCompanyToolStripMenuItem.Name = "tHGLCompanyToolStripMenuItem";
             this.tHGLCompanyToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.tHGLCompanyToolStripMenuItem.Text = "T.H.G.L Company";
+            this.tHGLCompanyToolStripMenuItem.Click += new System.EventHandler(this.tHGLCompanyToolStripMenuItem_Click);
             // 
             // mdiForm
             // 
