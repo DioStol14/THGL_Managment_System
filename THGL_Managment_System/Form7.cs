@@ -34,7 +34,8 @@ namespace THGL_Managment_System
 
             }
             */
-           // bunifuTextbox1.text.Length="";
+         // bunifuTextbox1.text.Length="";
+            bunifuMetroTextbox1.Text += "\b";
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -60,6 +61,14 @@ namespace THGL_Managment_System
             else
                bunifuMetroTextbox1.Text = posothta.ToString();
 
+        }
+
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox1.Text = "";
+            bunifuMaterialTextbox2.Text = "";
+            bunifuMetroTextbox1.Text = "0";
+            posothta = 0;
         }
     }
 }
