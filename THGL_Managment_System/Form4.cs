@@ -16,5 +16,10 @@ namespace THGL_Managment_System
         {
             InitializeComponent();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
