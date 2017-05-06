@@ -44,5 +44,10 @@ namespace THGL_Managment_System
             pelatis.MdiParent = this;
             pelatis.Show();
         }
+
+        private void entryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
