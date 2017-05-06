@@ -34,7 +34,6 @@
             this.entryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeFormsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.processingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +53,12 @@
             this.howToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tHGLCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.νέοςΠελάτηςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.επεξεργασίαΠελατώνToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.νέοΠροϊόνToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.επεξεργασίαΠροϊόντοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.καλύτεροςΠελάτηςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.καλύτερηΠόληToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +82,7 @@
             this.entryToolStripMenuItem,
             this.openToolStripMenuItem,
             this.closeFormsToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.έξοδοςToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.fileToolStripMenuItem.Text = "Αρχείο";
@@ -104,7 +109,7 @@
             // 
             this.exitToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Dakirby309_Windows_8_Metro_Other_Power_Shut_Down_Metro;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Έξοδος";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -177,19 +182,6 @@
             this.productToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.productToolStripMenuItem.Text = "Προϊόν";
             // 
-            // νέοΠροϊόνToolStripMenuItem
-            // 
-            this.νέοΠροϊόνToolStripMenuItem.Name = "νέοΠροϊόνToolStripMenuItem";
-            this.νέοΠροϊόνToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.νέοΠροϊόνToolStripMenuItem.Text = "Νέο Προϊόν";
-            this.νέοΠροϊόνToolStripMenuItem.Click += new System.EventHandler(this.νέοΠροϊόνToolStripMenuItem_Click);
-            // 
-            // επεξεργασίαΠροϊόντοςToolStripMenuItem
-            // 
-            this.επεξεργασίαΠροϊόντοςToolStripMenuItem.Name = "επεξεργασίαΠροϊόντοςToolStripMenuItem";
-            this.επεξεργασίαΠροϊόντοςToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.επεξεργασίαΠροϊόντοςToolStripMenuItem.Text = "Επεξεργασία Προϊόντος";
-            // 
             // statisticToolStripMenuItem
             // 
             this.statisticToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -245,6 +237,42 @@
             this.tHGLCompanyToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.tHGLCompanyToolStripMenuItem.Text = "T.H.G.L Company";
             // 
+            // νέοςΠελάτηςToolStripMenuItem
+            // 
+            this.νέοςΠελάτηςToolStripMenuItem.Name = "νέοςΠελάτηςToolStripMenuItem";
+            this.νέοςΠελάτηςToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.νέοςΠελάτηςToolStripMenuItem.Text = "Νέος Πελάτης";
+            // 
+            // επεξεργασίαΠελατώνToolStripMenuItem
+            // 
+            this.επεξεργασίαΠελατώνToolStripMenuItem.Name = "επεξεργασίαΠελατώνToolStripMenuItem";
+            this.επεξεργασίαΠελατώνToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.επεξεργασίαΠελατώνToolStripMenuItem.Text = "Επεξεργασία Πελατών";
+            // 
+            // νέοΠροϊόνToolStripMenuItem
+            // 
+            this.νέοΠροϊόνToolStripMenuItem.Name = "νέοΠροϊόνToolStripMenuItem";
+            this.νέοΠροϊόνToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.νέοΠροϊόνToolStripMenuItem.Text = "Νέο Προϊόν";
+            // 
+            // επεξεργασίαΠροϊόντοςToolStripMenuItem
+            // 
+            this.επεξεργασίαΠροϊόντοςToolStripMenuItem.Name = "επεξεργασίαΠροϊόντοςToolStripMenuItem";
+            this.επεξεργασίαΠροϊόντοςToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.επεξεργασίαΠροϊόντοςToolStripMenuItem.Text = "Επεξεργασία Προϊόντος";
+            // 
+            // καλύτεροςΠελάτηςToolStripMenuItem
+            // 
+            this.καλύτεροςΠελάτηςToolStripMenuItem.Name = "καλύτεροςΠελάτηςToolStripMenuItem";
+            this.καλύτεροςΠελάτηςToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.καλύτεροςΠελάτηςToolStripMenuItem.Text = "Καλύτερος Πελάτης";
+            // 
+            // καλύτερηΠόληToolStripMenuItem
+            // 
+            this.καλύτερηΠόληToolStripMenuItem.Name = "καλύτερηΠόληToolStripMenuItem";
+            this.καλύτερηΠόληToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.καλύτερηΠόληToolStripMenuItem.Text = "Καλύτερη Πόλη";
+            // 
             // mdiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,7 +298,6 @@
         private System.Windows.Forms.ToolStripMenuItem entryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeFormsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem processingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
@@ -291,5 +318,6 @@
         private System.Windows.Forms.ToolStripMenuItem επεξεργασίαΠροϊόντοςToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem καλύτεροςΠελάτηςToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem καλύτερηΠόληToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem έξοδοςToolStripMenuItem;
     }
 }
