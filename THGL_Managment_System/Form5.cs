@@ -27,5 +27,10 @@ namespace THGL_Managment_System
                
            
         }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Παρακαλώ εισάγετε το Barcode προϊόντος για να συνεχίσετε", "Βοήθεια", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
