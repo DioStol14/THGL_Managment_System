@@ -10,8 +10,9 @@
 
 namespace THGL_Managment_System.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -89,5 +90,14 @@ namespace THGL_Managment_System.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        public static Image Custom_Icon_Design_Pretty_Office_2_FAQ { get; internal set; }
+        public static Image Designcontest_Ecommerce_Business_Company_building { get; internal set; }
+        public static Image Oxygen_Icons_org_Oxygen_Actions_help_about { get; internal set; }
+        public static Image Gakuseisean_Ivista_2_Misc_New_Database { get; internal set; }
+        public static Image Custom_Icon_Design_Flatastic_2_Product { get; internal set; }
+        public static Image Oxygen_Icons_org_Oxygen_Actions_edit_delete { get; internal set; }
+        public static Image Dakirby309_Windows_8_Metro_Other_Power_Shut_Down_Metro { get; internal set; }
+        public static Image Oxygen_Icons_org_Oxygen_Apps_preferences_desktop_font { get; internal set; }
     }
 }

@@ -28,7 +28,7 @@ namespace THGL_Managment_System
                 bunifuCircleProgressbar1.Show();
 
             }
-            this.Hide();
+            Hide();
             mdiForm frm2 = new mdiForm();
             frm2.Show();
 
