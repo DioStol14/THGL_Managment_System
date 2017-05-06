@@ -64,6 +64,7 @@
             this.bunifuTextbox1.Size = new System.Drawing.Size(297, 42);
             this.bunifuTextbox1.TabIndex = 3;
             this.bunifuTextbox1.text = "";
+            this.bunifuTextbox1.OnTextChange += new System.EventHandler(this.bunifuTextbox1_OnTextChange);
             // 
             // label2
             // 
@@ -107,7 +108,7 @@
             this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.bunifuMetroTextbox1.BorderThickness = 3;
             this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox1.isPassword = false;
             this.bunifuMetroTextbox1.Location = new System.Drawing.Point(192, 228);
@@ -115,6 +116,7 @@
             this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
             this.bunifuMetroTextbox1.Size = new System.Drawing.Size(50, 44);
             this.bunifuMetroTextbox1.TabIndex = 7;
+            this.bunifuMetroTextbox1.Text = "0";
             this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuThinButton21
@@ -141,6 +143,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(36, 41);
             this.bunifuThinButton21.TabIndex = 8;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // bunifuThinButton22
             // 
@@ -166,6 +169,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(36, 41);
             this.bunifuThinButton22.TabIndex = 9;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton23
             // 
