@@ -16,5 +16,16 @@ namespace THGL_Managment_System
         {
             InitializeComponent();
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+          //  Bunifu.Framework.UI.BunifuMaterialTextbox tmp;
+           // Control control = new Control();
+            for (int i=0; i< 5; i++)
+            panel1.Controls[i].Text = "";
+                
+               
+           
+        }
     }
 }
