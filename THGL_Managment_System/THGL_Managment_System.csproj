@@ -119,6 +119,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="THGLdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THGLdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THGLdbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THGLdbDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +181,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="THGLdbDataSet.xsc">
+      <DependentUpon>THGLdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="THGLdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THGLdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THGLdbDataSet.xss">
+      <DependentUpon>THGLdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="THGLdbDataSet1.xsc">
+      <DependentUpon>THGLdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="THGLdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THGLdbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THGLdbDataSet1.xss">
+      <DependentUpon>THGLdbDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -21,5 +21,14 @@ namespace THGL_Managment_System
         {
             MessageBox.Show("Παρακαλώ εισάγετε το Barcode πελάτη για να συνεχίσετε","Βοήθεια", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'tHGLdbDataSet1.Pelatis' table. You can move, or remove it, as needed.
+            this.pelatisTableAdapter.Fill(this.tHGLdbDataSet1.Pelatis);
+            // TODO: This line of code loads data into the 'tHGLdbDataSet.Pelatis' table. You can move, or remove it, as needed.
+            //this.pelatisTableAdapter.Fill(this.tHGLdbDataSet.Pelatis);
+
+        }
     }
 }
