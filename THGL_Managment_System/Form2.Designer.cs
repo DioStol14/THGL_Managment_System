@@ -49,11 +49,11 @@
             this.statisticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.καλύτεροςΠελάτηςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.κουπόνιαToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tHGLCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.κουπόνιαToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -227,6 +227,12 @@
             this.storesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.storesToolStripMenuItem.Text = "Καταστήματα";
             // 
+            // κουπόνιαToolStripMenuItem
+            // 
+            this.κουπόνιαToolStripMenuItem.Name = "κουπόνιαToolStripMenuItem";
+            this.κουπόνιαToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.κουπόνιαToolStripMenuItem.Text = "Κουπόνια";
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -257,12 +263,7 @@
             this.tHGLCompanyToolStripMenuItem.Name = "tHGLCompanyToolStripMenuItem";
             this.tHGLCompanyToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.tHGLCompanyToolStripMenuItem.Text = "T.H.G.L Company";
-            // 
-            // κουπόνιαToolStripMenuItem
-            // 
-            this.κουπόνιαToolStripMenuItem.Name = "κουπόνιαToolStripMenuItem";
-            this.κουπόνιαToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.κουπόνιαToolStripMenuItem.Text = "Κουπόνια";
+            this.tHGLCompanyToolStripMenuItem.Click += new System.EventHandler(this.tHGLCompanyToolStripMenuItem_Click);
             // 
             // mdiForm
             // 
