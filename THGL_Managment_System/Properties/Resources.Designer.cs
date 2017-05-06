@@ -63,6 +63,16 @@ namespace THGL_Managment_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap s68_think_globally_act_locally_sticker_0 {
+            get {
+                object obj = ResourceManager.GetObject("s68_think_globally_act_locally_sticker_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_environment {
             get {
                 object obj = ResourceManager.GetObject("save-environment", resourceCulture);
