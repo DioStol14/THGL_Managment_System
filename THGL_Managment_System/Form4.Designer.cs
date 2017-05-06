@@ -51,7 +51,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = global::THGL_Managment_System.Properties.Resources.map;
+            this.pictureBox3.Image = global::THGL_Managment_System.Properties.Resources.map;
             this.pictureBox3.Location = new System.Drawing.Point(23, 444);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(651, 126);
@@ -61,7 +61,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.s68_think_globally_act_locally_sticker_0;
+            this.pictureBox1.Image = global::THGL_Managment_System.Properties.Resources.s68_think_globally_act_locally_sticker_0;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(696, 157);
