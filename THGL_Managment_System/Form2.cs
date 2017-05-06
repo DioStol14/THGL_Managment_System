@@ -47,16 +47,7 @@ namespace THGL_Managment_System
 
         private void entryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form7 katwxirosi = new Form7();
-            katwxirosi.MdiParent = this;
-            katwxirosi.Show();
-        }
 
-        private void tHGLCompanyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form4 aboutUs = new Form4();
-            aboutUs.MdiParent = this;
-            aboutUs.Show();
         }
     }
 }

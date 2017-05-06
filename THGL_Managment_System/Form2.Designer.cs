@@ -257,7 +257,6 @@
             this.tHGLCompanyToolStripMenuItem.Name = "tHGLCompanyToolStripMenuItem";
             this.tHGLCompanyToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.tHGLCompanyToolStripMenuItem.Text = "T.H.G.L Company";
-            this.tHGLCompanyToolStripMenuItem.Click += new System.EventHandler(this.tHGLCompanyToolStripMenuItem_Click);
             // 
             // κουπόνιαToolStripMenuItem
             // 
