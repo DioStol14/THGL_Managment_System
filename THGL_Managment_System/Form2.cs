@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace THGL_Managment_System
 {
-    public partial class Form2 : Form
+    public partial class mdiForm : Form
     {
-        public Form2()
+        public mdiForm()
         {
             InitializeComponent();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
