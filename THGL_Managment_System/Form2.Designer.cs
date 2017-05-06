@@ -47,6 +47,8 @@
             this.statisticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tHGLCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,30 +173,27 @@
             // 
             // customerToolStripMenuItem
             // 
-            this.customerToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Icons_Land_Vista_People_Office_Customer_Male_Light;
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.customerToolStripMenuItem.Text = "Πελάτες";
             // 
             // productToolStripMenuItem
             // 
-            this.productToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Photoshopedia_Xedia_Recycle_Bin_Full;
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.productToolStripMenuItem.Text = "Προϊόν";
             // 
             // statisticToolStripMenuItem
             // 
-            this.statisticToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Awicons_Vista_Artistic_Chart;
             this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
-            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.statisticToolStripMenuItem.Text = "Στατιστικά";
             // 
             // storesToolStripMenuItem
             // 
             this.storesToolStripMenuItem.Image = global::THGL_Managment_System.Properties.Resources.Designcontest_Ecommerce_Business_Company_building;
             this.storesToolStripMenuItem.Name = "storesToolStripMenuItem";
-            this.storesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.storesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.storesToolStripMenuItem.Text = "Καταστήματα";
             // 
             // howToToolStripMenuItem
@@ -203,6 +202,20 @@
             this.howToToolStripMenuItem.Name = "howToToolStripMenuItem";
             this.howToToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.howToToolStripMenuItem.Text = "Πως λειτουργεί";
+            // 
+            // aboutUsToolStripMenuItem
+            // 
+            this.aboutUsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tHGLCompanyToolStripMenuItem});
+            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.aboutUsToolStripMenuItem.Text = "Σχετικά με εμάς";
+            // 
+            // tHGLCompanyToolStripMenuItem
+            // 
+            this.tHGLCompanyToolStripMenuItem.Name = "tHGLCompanyToolStripMenuItem";
+            this.tHGLCompanyToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.tHGLCompanyToolStripMenuItem.Text = "T.H.G.L Company";
             // 
             // mdiForm
             // 
@@ -243,5 +256,11 @@
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tHGLCompanyToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem νέοςΠελάτηςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem επεξεργασίαΠελατώνToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem νέοΠροϊόνToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem επεξεργασίαΠροϊόντοςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem καλύτεροςΠελάτηςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem καλύτερηΠόληToolStripMenuItem;
     }
 }
