@@ -346,7 +346,7 @@
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Gainsboro;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.Location = new System.Drawing.Point(16, 390);
@@ -365,13 +365,13 @@
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Καταχώρηση";
+            this.bunifuThinButton22.ButtonText = "Ακύρωση";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.IdleBorderThickness = 1;
             this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Gainsboro;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.Location = new System.Drawing.Point(247, 390);
@@ -396,7 +396,7 @@
             this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.IdleBorderThickness = 1;
             this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.Gainsboro;
+            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.Location = new System.Drawing.Point(16, 430);

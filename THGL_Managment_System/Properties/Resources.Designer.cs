@@ -10,8 +10,9 @@
 
 namespace THGL_Managment_System.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -27,7 +28,8 @@ namespace THGL_Managment_System.Properties {
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+        internal static Image s68_think_globally_act_locally_sticker_0;
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
@@ -57,16 +59,6 @@ namespace THGL_Managment_System.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1494021467_plus_add_green {
-            get {
-                object obj = ResourceManager.GetObject("1494021467_plus_add_green", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -236,26 +228,6 @@ namespace THGL_Managment_System.Properties {
         internal static System.Drawing.Bitmap Oxygen_Icons_org_Oxygen_Apps_system_software_update {
             get {
                 object obj = ResourceManager.GetObject("Oxygen-Icons.org-Oxygen-Apps-system-software-update", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Photoshopedia_Xedia_Recycle_Bin_Full {
-            get {
-                object obj = ResourceManager.GetObject("Photoshopedia-Xedia-Recycle-Bin-Full", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap s68_think_globally_act_locally_sticker_0 {
-            get {
-                object obj = ResourceManager.GetObject("s68_think_globally_act_locally_sticker_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

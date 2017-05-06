@@ -206,6 +206,7 @@
     <None Include="Resources\1494021467_plus_add_green.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="map.png" />
     <Content Include="Resources\map.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
