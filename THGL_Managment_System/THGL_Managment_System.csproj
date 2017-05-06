@@ -202,6 +202,9 @@
   <ItemGroup>
     <None Include="Resources\1494021467_plus_add_green.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\map.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
