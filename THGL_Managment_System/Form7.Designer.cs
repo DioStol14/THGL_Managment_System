@@ -178,7 +178,7 @@
             this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Καταχώρηση";
+            this.bunifuThinButton23.ButtonText = "Κατώχηρωση";
             this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
