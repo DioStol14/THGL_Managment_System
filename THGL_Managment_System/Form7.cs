@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using THGL_Managment_System.TESTMODEL;
 
 namespace THGL_Managment_System
 {
@@ -16,7 +18,7 @@ namespace THGL_Managment_System
         public Form7()
         {
             InitializeComponent();
-            
+
         }
 
         private void bunifuTextbox1_OnTextChange(object sender, EventArgs e)
@@ -59,7 +61,7 @@ namespace THGL_Managment_System
                 bunifuMetroTextbox1.Text = "0";
             }
             else
-               bunifuMetroTextbox1.Text = posothta.ToString();
+                bunifuMetroTextbox1.Text = posothta.ToString();
 
         }
 
@@ -79,12 +81,43 @@ namespace THGL_Managment_System
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
             this.Close();
-            
+
         }
 
-        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        private async void bunifuThinButton23_Click(object sender, EventArgs e)
         {
+            string barpel = bunifuMaterialTextbox1.Text;
+            string barproion = bunifuMaterialTextbox2.Text;
+            try
+            {
+                using (THGLdbEntities tHGLdbEntities = new THGLdbEntities())
+                {
+                    var editPelatis = tHGLdbEntities.Pelatis.Any(a => a.Kwdikos_Pelati == barpel);// any = an yparxei estw ena i kai parapanw = true
+                    var editProion = tHGLdbEntities.Proion.Any(a => a.Barcode == barproion);
+                    if (!editPelatis || !editProion)
+                        return;
 
+                    Trace.WriteLine(bunifuMaterialTextbox1.Text);
+                    Trace.WriteLine(bunifuMaterialTextbox2.Text);
+                    Trace.WriteLine(bunifuMetroTextbox1.Text);
+
+                    Anakuklwse anakiklwse = new Anakuklwse
+                    {
+                        Posotita = Convert.ToInt32(bunifuMetroTextbox1.Text),
+                        Barcode = bunifuMaterialTextbox2.Text,
+                        Kwd_Pelati = bunifuMetroTextbox1.Text,
+                        
+                    };
+                    //tHGLdbEntities.Anakuklwse.Add(anakiklwse);
+                    await tHGLdbEntities.SaveChangesAsync();
+                    MessageBox.Show("Επιτυχής ενημέρωσης", "Η ενημέρωση πραγματοποιήθηκε επιτυχώς!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.ClearForm();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Exception Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

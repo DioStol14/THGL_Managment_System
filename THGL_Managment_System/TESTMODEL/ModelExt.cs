@@ -12,7 +12,7 @@ namespace THGL_Managment_System.TESTMODEL
 
         public int? getPoints()
         {
-            return this.Anakuklwnei.Sum(a => a.pontoi);
+            return this.Anakuklwse.Sum(a => a.Posotita*a.Proion.Pontoi);
         }
 
 

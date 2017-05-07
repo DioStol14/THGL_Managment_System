@@ -17,7 +17,7 @@ namespace THGL_Managment_System.TESTMODEL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Pelatis()
         {
-            this.Anakuklwnei = new HashSet<Anakuklwnei>();
+            this.Anakuklwse = new HashSet<Anakuklwse>();
         }
     
         public string Kwdikos_Pelati { get; set; }
@@ -32,6 +32,6 @@ namespace THGL_Managment_System.TESTMODEL
         public Nullable<int> Pontoi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Anakuklwnei> Anakuklwnei { get; set; }
+        public virtual ICollection<Anakuklwse> Anakuklwse { get; set; }
     }
 }

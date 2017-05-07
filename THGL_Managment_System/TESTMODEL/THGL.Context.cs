@@ -25,8 +25,7 @@ namespace THGL_Managment_System.TESTMODEL
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Anakuklwnei> Anakuklwnei { get; set; }
-        public virtual DbSet<Anakuklwsimo_PELPRO> Anakuklwsimo_PELPRO { get; set; }
+        public virtual DbSet<Anakuklwse> Anakuklwse { get; set; }
         public virtual DbSet<Pelatis> Pelatis { get; set; }
         public virtual DbSet<Proion> Proion { get; set; }
     }

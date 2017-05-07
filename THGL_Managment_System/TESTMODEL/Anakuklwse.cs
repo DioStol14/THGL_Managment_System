@@ -12,21 +12,15 @@ namespace THGL_Managment_System.TESTMODEL
     using System;
     using System.Collections.Generic;
     
-    public partial class Anakuklwnei
+    public partial class Anakuklwse
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Anakuklwnei()
-        {
-            this.Anakuklwsimo_PELPRO = new HashSet<Anakuklwsimo_PELPRO>();
-        }
-    
-        public string Kwdikos_Anakuklwsis { get; set; }
-        public string Kwdikos_Pelati { get; set; }
+        public int ID { get; set; }
+        public string Kwd_Pelati { get; set; }
+        public string Barcode { get; set; }
+        public Nullable<int> Posotita { get; set; }
         public Nullable<System.DateTime> Hmeromhnia { get; set; }
-        public Nullable<int> pontoi { get; set; }
     
         public virtual Pelatis Pelatis { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Anakuklwsimo_PELPRO> Anakuklwsimo_PELPRO { get; set; }
+        public virtual Proion Proion { get; set; }
     }
 }

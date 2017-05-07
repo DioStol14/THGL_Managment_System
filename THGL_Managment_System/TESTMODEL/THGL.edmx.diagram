@@ -5,13 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="1b284feceed846b3b1fbbd5b8bd070bf" Name="Diagram1">
-        <EntityTypeShape EntityType="THGLdbModel.Anakuklwnei" Width="1.5" PointX="3" PointY="1.5" />
-        <EntityTypeShape EntityType="THGLdbModel.Anakuklwsimo_PELPRO" Width="1.5" PointX="5.25" PointY="1.5" />
-        <EntityTypeShape EntityType="THGLdbModel.Pelatis" Width="1.5" PointX="0.75" PointY="1" />
-        <EntityTypeShape EntityType="THGLdbModel.Proion" Width="1.5" PointX="3" PointY="5.5" />
-        <AssociationConnector Association="THGLdbModel.FK_Anakuklwnei_Pelatis" />
-        <AssociationConnector Association="THGLdbModel.FK_Anakuklwsimo_PELPRO_Anakuklwnei" />
-        <AssociationConnector Association="THGLdbModel.FK_Anakuklwsimo_PELPRO_Proion" />
+        <EntityTypeShape EntityType="THGLdbModel.Anakuklwse" Width="1.5" PointX="6.25" PointY="3" />
+        <EntityTypeShape EntityType="THGLdbModel.Pelatis" Width="1.5" PointX="2.375" PointY="2.375" />
+        <EntityTypeShape EntityType="THGLdbModel.Proion" Width="1.5" PointX="10" PointY="1.875" />
+        <AssociationConnector Association="THGLdbModel.FK_Anakuklwse_Pelatis" />
+        <AssociationConnector Association="THGLdbModel.FK_Anakuklwse_Proion" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

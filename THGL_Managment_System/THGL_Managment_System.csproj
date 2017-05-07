@@ -130,10 +130,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TESTMODEL\Anakuklwnei.cs">
-      <DependentUpon>THGL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TESTMODEL\Anakuklwsimo_PELPRO.cs">
+    <Compile Include="TESTMODEL\Anakuklwse.cs">
       <DependentUpon>THGL.tt</DependentUpon>
     </Compile>
     <Compile Include="TESTMODEL\Extensions.cs" />

@@ -17,7 +17,7 @@ namespace THGL_Managment_System.TESTMODEL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Proion()
         {
-            this.Anakuklwsimo_PELPRO = new HashSet<Anakuklwsimo_PELPRO>();
+            this.Anakuklwse = new HashSet<Anakuklwse>();
         }
     
         public string Barcode { get; set; }
@@ -27,6 +27,6 @@ namespace THGL_Managment_System.TESTMODEL
         public string Anakuklwsimo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Anakuklwsimo_PELPRO> Anakuklwsimo_PELPRO { get; set; }
+        public virtual ICollection<Anakuklwse> Anakuklwse { get; set; }
     }
 }
