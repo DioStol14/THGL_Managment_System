@@ -12,13 +12,12 @@ namespace THGL_Managment_System
 {
     public partial class mdiForm : Form
     {
-        SqlConnection connection;
+        
         public mdiForm()
         {
 
             InitializeComponent();
-            connection = new SqlConnection("Data Source=VOUTC-PC\\SQLEXPRESS;Initial Catalog=THGLdb;Integrated Security=True");
-            connection.Open();
+            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

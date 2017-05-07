@@ -18,14 +18,18 @@ namespace THGL_Managment_System
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private async void label1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i <= 100; i++)
             {
                 bunifuCircleProgressbar1.Value = i;
-                Thread.Sleep(30);
+                //Thread.Sleep(30);
+#if !DEBUG
+                await Task.Delay(30);
                 bunifuCircleProgressbar1.Update();
                 bunifuCircleProgressbar1.Show();
+#endif
+
 
             }
             Hide();

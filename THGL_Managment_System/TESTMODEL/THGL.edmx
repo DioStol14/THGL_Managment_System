@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="THGLdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Anakuklwnei">
+          <Key>
+            <PropertyRef Name="Kwdikos_Anakuklwsis" />
+          </Key>
+          <Property Name="Kwdikos_Anakuklwsis" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Kwdikos_Pelati" Type="varchar" MaxLength="50" />
+          <Property Name="Hmeromhnia" Type="date" />
+          <Property Name="pontoi" Type="int" />
+        </EntityType>
+        <EntityType Name="Anakuklwsimo_PELPRO">
+          <Key>
+            <PropertyRef Name="Kwdikos_Anakuklwsis" />
+            <PropertyRef Name="Barcode" />
+          </Key>
+          <Property Name="Kwdikos_Anakuklwsis" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Barcode" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Posotita" Type="int" />
+        </EntityType>
+        <EntityType Name="Pelatis">
+          <Key>
+            <PropertyRef Name="Kwdikos_Pelati" />
+          </Key>
+          <Property Name="Kwdikos_Pelati" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Onoma" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Epitheto" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Hm_gennisis" Type="date" Nullable="false" />
+          <Property Name="Poli" Type="varchar" MaxLength="50" />
+          <Property Name="Tk" Type="varchar" MaxLength="50" />
+          <Property Name="Dieuthinsi" Type="varchar" MaxLength="50" />
+          <Property Name="Thlefwno" Type="varchar" MaxLength="50" />
+          <Property Name="Sxolia" Type="varchar" MaxLength="50" />
+          <Property Name="Pontoi" Type="int" />
+        </EntityType>
+        <EntityType Name="Proion">
+          <Key>
+            <PropertyRef Name="Barcode" />
+          </Key>
+          <Property Name="Barcode" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Onoma" Type="varchar" MaxLength="50" />
+          <Property Name="Kathgoria" Type="varchar" MaxLength="50" />
+          <Property Name="Pontoi" Type="int" />
+          <Property Name="Anakuklwsimo" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <Association Name="FK_Anakuklwnei_Pelatis">
+          <End Role="Pelatis" Type="Self.Pelatis" Multiplicity="0..1" />
+          <End Role="Anakuklwnei" Type="Self.Anakuklwnei" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pelatis">
+              <PropertyRef Name="Kwdikos_Pelati" />
+            </Principal>
+            <Dependent Role="Anakuklwnei">
+              <PropertyRef Name="Kwdikos_Pelati" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anakuklwsimo_PELPRO_Anakuklwnei">
+          <End Role="Anakuklwnei" Type="Self.Anakuklwnei" Multiplicity="1" />
+          <End Role="Anakuklwsimo_PELPRO" Type="Self.Anakuklwsimo_PELPRO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Anakuklwnei">
+              <PropertyRef Name="Kwdikos_Anakuklwsis" />
+            </Principal>
+            <Dependent Role="Anakuklwsimo_PELPRO">
+              <PropertyRef Name="Kwdikos_Anakuklwsis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anakuklwsimo_PELPRO_Proion">
+          <End Role="Proion" Type="Self.Proion" Multiplicity="1" />
+          <End Role="Anakuklwsimo_PELPRO" Type="Self.Anakuklwsimo_PELPRO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proion">
+              <PropertyRef Name="Barcode" />
+            </Principal>
+            <Dependent Role="Anakuklwsimo_PELPRO">
+              <PropertyRef Name="Barcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="THGLdbModelStoreContainer">
+          <EntitySet Name="Anakuklwnei" EntityType="Self.Anakuklwnei" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Anakuklwsimo_PELPRO" EntityType="Self.Anakuklwsimo_PELPRO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pelatis" EntityType="Self.Pelatis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Proion" EntityType="Self.Proion" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Anakuklwnei_Pelatis" Association="Self.FK_Anakuklwnei_Pelatis">
+            <End Role="Pelatis" EntitySet="Pelatis" />
+            <End Role="Anakuklwnei" EntitySet="Anakuklwnei" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anakuklwsimo_PELPRO_Anakuklwnei" Association="Self.FK_Anakuklwsimo_PELPRO_Anakuklwnei">
+            <End Role="Anakuklwnei" EntitySet="Anakuklwnei" />
+            <End Role="Anakuklwsimo_PELPRO" EntitySet="Anakuklwsimo_PELPRO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anakuklwsimo_PELPRO_Proion" Association="Self.FK_Anakuklwsimo_PELPRO_Proion">
+            <End Role="Proion" EntitySet="Proion" />
+            <End Role="Anakuklwsimo_PELPRO" EntitySet="Anakuklwsimo_PELPRO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="THGLdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="THGLdbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Anakuklwnei" EntityType="THGLdbModel.Anakuklwnei" />
+          <EntitySet Name="Anakuklwsimo_PELPRO" EntityType="THGLdbModel.Anakuklwsimo_PELPRO" />
+          <EntitySet Name="Pelatis" EntityType="THGLdbModel.Pelatis" />
+          <EntitySet Name="Proion" EntityType="THGLdbModel.Proion" />
+          <AssociationSet Name="FK_Anakuklwnei_Pelatis" Association="THGLdbModel.FK_Anakuklwnei_Pelatis">
+            <End Role="Pelatis" EntitySet="Pelatis" />
+            <End Role="Anakuklwnei" EntitySet="Anakuklwnei" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anakuklwsimo_PELPRO_Anakuklwnei" Association="THGLdbModel.FK_Anakuklwsimo_PELPRO_Anakuklwnei">
+            <End Role="Anakuklwnei" EntitySet="Anakuklwnei" />
+            <End Role="Anakuklwsimo_PELPRO" EntitySet="Anakuklwsimo_PELPRO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anakuklwsimo_PELPRO_Proion" Association="THGLdbModel.FK_Anakuklwsimo_PELPRO_Proion">
+            <End Role="Proion" EntitySet="Proion" />
+            <End Role="Anakuklwsimo_PELPRO" EntitySet="Anakuklwsimo_PELPRO" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Anakuklwnei">
+          <Key>
+            <PropertyRef Name="Kwdikos_Anakuklwsis" />
+          </Key>
+          <Property Name="Kwdikos_Anakuklwsis" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Kwdikos_Pelati" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Hmeromhnia" Type="DateTime" Precision="0" />
+          <Property Name="pontoi" Type="Int32" />
+          <NavigationProperty Name="Pelatis" Relationship="THGLdbModel.FK_Anakuklwnei_Pelatis" FromRole="Anakuklwnei" ToRole="Pelatis" />
+          <NavigationProperty Name="Anakuklwsimo_PELPRO" Relationship="THGLdbModel.FK_Anakuklwsimo_PELPRO_Anakuklwnei" FromRole="Anakuklwnei" ToRole="Anakuklwsimo_PELPRO" />
+        </EntityType>
+        <EntityType Name="Anakuklwsimo_PELPRO">
+          <Key>
+            <PropertyRef Name="Kwdikos_Anakuklwsis" />
+            <PropertyRef Name="Barcode" />
+          </Key>
+          <Property Name="Kwdikos_Anakuklwsis" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Barcode" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Posotita" Type="Int32" />
+          <NavigationProperty Name="Anakuklwnei" Relationship="THGLdbModel.FK_Anakuklwsimo_PELPRO_Anakuklwnei" FromRole="Anakuklwsimo_PELPRO" ToRole="Anakuklwnei" />
+          <NavigationProperty Name="Proion" Relationship="THGLdbModel.FK_Anakuklwsimo_PELPRO_Proion" FromRole="Anakuklwsimo_PELPRO" ToRole="Proion" />
+        </EntityType>
+        <EntityType Name="Pelatis">
+          <Key>
+            <PropertyRef Name="Kwdikos_Pelati" />
+          </Key>
+          <Property Name="Kwdikos_Pelati" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Onoma" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Epitheto" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Hm_gennisis" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Poli" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dieuthinsi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Thlefwno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Sxolia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Pontoi" Type="Int32" />
+          <NavigationProperty Name="Anakuklwnei" Relationship="THGLdbModel.FK_Anakuklwnei_Pelatis" FromRole="Pelatis" ToRole="Anakuklwnei" />
+        </EntityType>
+        <EntityType Name="Proion">
+          <Key>
+            <PropertyRef Name="Barcode" />
+          </Key>
+          <Property Name="Barcode" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Onoma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Kathgoria" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Pontoi" Type="Int32" />
+          <Property Name="Anakuklwsimo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Anakuklwsimo_PELPRO" Relationship="THGLdbModel.FK_Anakuklwsimo_PELPRO_Proion" FromRole="Proion" ToRole="Anakuklwsimo_PELPRO" />
+        </EntityType>
+        <Association Name="FK_Anakuklwnei_Pelatis">
+          <End Type="THGLdbModel.Pelatis" Role="Pelatis" Multiplicity="0..1" />
+          <End Type="THGLdbModel.Anakuklwnei" Role="Anakuklwnei" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pelatis">
+              <PropertyRef Name="Kwdikos_Pelati" />
+            </Principal>
+            <Dependent Role="Anakuklwnei">
+              <PropertyRef Name="Kwdikos_Pelati" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anakuklwsimo_PELPRO_Anakuklwnei">
+          <End Type="THGLdbModel.Anakuklwnei" Role="Anakuklwnei" Multiplicity="1" />
+          <End Type="THGLdbModel.Anakuklwsimo_PELPRO" Role="Anakuklwsimo_PELPRO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Anakuklwnei">
+              <PropertyRef Name="Kwdikos_Anakuklwsis" />
+            </Principal>
+            <Dependent Role="Anakuklwsimo_PELPRO">
+              <PropertyRef Name="Kwdikos_Anakuklwsis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anakuklwsimo_PELPRO_Proion">
+          <End Type="THGLdbModel.Proion" Role="Proion" Multiplicity="1" />
+          <End Type="THGLdbModel.Anakuklwsimo_PELPRO" Role="Anakuklwsimo_PELPRO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proion">
+              <PropertyRef Name="Barcode" />
+            </Principal>
+            <Dependent Role="Anakuklwsimo_PELPRO">
+              <PropertyRef Name="Barcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="THGLdbModelStoreContainer" CdmEntityContainer="THGLdbEntities">
+          <EntitySetMapping Name="Anakuklwnei">
+            <EntityTypeMapping TypeName="THGLdbModel.Anakuklwnei">
+              <MappingFragment StoreEntitySet="Anakuklwnei">
+                <ScalarProperty Name="pontoi" ColumnName="pontoi" />
+                <ScalarProperty Name="Hmeromhnia" ColumnName="Hmeromhnia" />
+                <ScalarProperty Name="Kwdikos_Pelati" ColumnName="Kwdikos_Pelati" />
+                <ScalarProperty Name="Kwdikos_Anakuklwsis" ColumnName="Kwdikos_Anakuklwsis" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Anakuklwsimo_PELPRO">
+            <EntityTypeMapping TypeName="THGLdbModel.Anakuklwsimo_PELPRO">
+              <MappingFragment StoreEntitySet="Anakuklwsimo_PELPRO">
+                <ScalarProperty Name="Posotita" ColumnName="Posotita" />
+                <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+                <ScalarProperty Name="Kwdikos_Anakuklwsis" ColumnName="Kwdikos_Anakuklwsis" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pelatis">
+            <EntityTypeMapping TypeName="THGLdbModel.Pelatis">
+              <MappingFragment StoreEntitySet="Pelatis">
+                <ScalarProperty Name="Pontoi" ColumnName="Pontoi" />
+                <ScalarProperty Name="Sxolia" ColumnName="Sxolia" />
+                <ScalarProperty Name="Thlefwno" ColumnName="Thlefwno" />
+                <ScalarProperty Name="Dieuthinsi" ColumnName="Dieuthinsi" />
+                <ScalarProperty Name="Tk" ColumnName="Tk" />
+                <ScalarProperty Name="Poli" ColumnName="Poli" />
+                <ScalarProperty Name="Hm_gennisis" ColumnName="Hm_gennisis" />
+                <ScalarProperty Name="Epitheto" ColumnName="Epitheto" />
+                <ScalarProperty Name="Onoma" ColumnName="Onoma" />
+                <ScalarProperty Name="Kwdikos_Pelati" ColumnName="Kwdikos_Pelati" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Proion">
+            <EntityTypeMapping TypeName="THGLdbModel.Proion">
+              <MappingFragment StoreEntitySet="Proion">
+                <ScalarProperty Name="Anakuklwsimo" ColumnName="Anakuklwsimo" />
+                <ScalarProperty Name="Pontoi" ColumnName="Pontoi" />
+                <ScalarProperty Name="Kathgoria" ColumnName="Kathgoria" />
+                <ScalarProperty Name="Onoma" ColumnName="Onoma" />
+                <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

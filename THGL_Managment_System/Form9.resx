@@ -133,4 +133,10 @@
         Mt7U8PCY9IOt1+n9yKOMjUIqkVFIGaOQMkYhZYxCqgnhHhN9i7DbE6VPAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="Kwdikos_Pelati.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Onoma.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
