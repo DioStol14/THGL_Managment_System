@@ -81,5 +81,10 @@ namespace THGL_Managment_System
             this.Close();
             
         }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

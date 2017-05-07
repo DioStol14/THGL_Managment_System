@@ -46,36 +46,38 @@ namespace THGL_Managment_System
 
         private async void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            using (THGLdbEntities tHGLdbEntities = new THGLdbEntities())
+            try
             {
-                var proion = tHGLdbEntities.Proion.Single(a => a.Barcode == @"sdgfsd");
-                proion.Onoma = "newName";
-                proion.Kathgoria = "xarti";
-                await tHGLdbEntities.SaveChangesAsync();
+                using (THGLdbEntities tHGLdbEntities = new THGLdbEntities())
+                {
+                    Proion proion = new Proion
+                    {
+                        Barcode = bunifuMaterialTextbox1.Text,
+                        Onoma = bunifuMaterialTextbox2.Text,
+                        Kathgoria = bunifuDropdown1.selectedValue,
+                        Pontoi = int.Parse(bunifuMaterialTextbox4.Text),
+                        Anakuklwsimo = bunifuiOSSwitch1.Value ? "ΝΑΙ" : "ΟΧΙ",
+                    };
 
+                    tHGLdbEntities.Proion.Add(proion);
+                    await tHGLdbEntities.SaveChangesAsync();
 
-                var pelatis = tHGLdbEntities.Pelatis.Single(a => a.Kwdikos_Pelati == "");
-                int? p = pelatis.Anakuklwnei.Sum(a => a.pontoi);
-
-
-
-
-                //Proion proion = new Proion
-                //{
-                //    Barcode = bunifuMaterialTextbox1.Text,
-                //    Onoma = bunifuMaterialTextbox2.Text,
-                //    Kathgoria = bunifuDropdown1.selectedValue,
-                //    Pontoi = int.Parse(bunifuMaterialTextbox4.Text),
-                //    Anakuklwsimo = bunifuiOSSwitch1.Value ? "ΝΑΙ" : "ΟΧΙ",
-                //};
-
-                //tHGLdbEntities.Proion.Add(proion);
+                }
+                this.ClearForm();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+                
+                //var proion = tHGLdbEntities.Proion.Single(a => a.Barcode == @"sdgfsd");
+                //proion.Onoma = "newName";
+                //proion.Kathgoria = "xarti";
                 //await tHGLdbEntities.SaveChangesAsync();
+
+
+                //var pelatis = tHGLdbEntities.Pelatis.Single(a => a.Kwdikos_Pelati == "");
+                //int? p = pelatis.Anakuklwnei.Sum(a => a.pontoi);
+                
             }
         }
-
-
-
-
     }
-}

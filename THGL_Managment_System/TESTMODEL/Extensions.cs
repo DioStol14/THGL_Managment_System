@@ -32,7 +32,17 @@ namespace THGL_Managment_System.TESTMODEL
                     control.Controls[0].Text = string.Empty;
             }
         }
+        public static void OriginalClear(this Form form)
+        {
+            foreach (Control control in form.Controls)
+            {
+                if (control is TextBox)
+                    control.Text = string.Empty;
 
+                if (control is ComboBox)
+                    control.Controls[0].Text = string.Empty;
+            }
+        }
     }
 
 }

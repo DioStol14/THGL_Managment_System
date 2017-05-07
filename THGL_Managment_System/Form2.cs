@@ -112,5 +112,18 @@ namespace THGL_Managment_System
             kouponia.MdiParent = this;
             kouponia.Show();
         }
+
+        private void επεξεργασίαΠροϊόντοςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 editproduct = new Form5();
+            editproduct.MdiParent = this;
+            editproduct.Show();
+        }
+
+        private void mdiForm_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.bgdnew;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+        }
     }
 }

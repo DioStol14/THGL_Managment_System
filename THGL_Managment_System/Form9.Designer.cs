@@ -34,6 +34,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Kwdikos_Pelati = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Onoma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Epitheto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Poli = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thlefwno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,10 +82,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Kwdikos_Pelati,
-            this.Onoma});
+            this.Onoma,
+            this.Epitheto,
+            this.Poli,
+            this.Thlefwno});
             this.dataGridView1.Location = new System.Drawing.Point(12, 31);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(532, 280);
+            this.dataGridView1.Size = new System.Drawing.Size(539, 280);
             this.dataGridView1.TabIndex = 3;
             // 
             // Kwdikos_Pelati
@@ -97,12 +103,30 @@
             this.Onoma.HeaderText = "Όνομα";
             this.Onoma.Name = "Onoma";
             // 
+            // Epitheto
+            // 
+            this.Epitheto.DataPropertyName = "Epitheto";
+            this.Epitheto.HeaderText = "Επίθετο";
+            this.Epitheto.Name = "Epitheto";
+            // 
+            // Poli
+            // 
+            this.Poli.DataPropertyName = "Poli";
+            this.Poli.HeaderText = "Πόλη";
+            this.Poli.Name = "Poli";
+            // 
+            // Thlefwno
+            // 
+            this.Thlefwno.DataPropertyName = "Thlefwno";
+            this.Thlefwno.HeaderText = " Τηλέφωνο";
+            this.Thlefwno.Name = "Thlefwno";
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(556, 376);
+            this.ClientSize = new System.Drawing.Size(563, 376);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label1);
@@ -121,5 +145,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kwdikos_Pelati;
         private System.Windows.Forms.DataGridViewTextBoxColumn Onoma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Epitheto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Poli;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thlefwno;
     }
 }

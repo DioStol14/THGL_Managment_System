@@ -63,9 +63,49 @@ namespace THGL_Managment_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _031521_environmental_benefits_recycling {
+            get {
+                object obj = ResourceManager.GetObject("_031521_environmental_benefits_recycling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Actions_go_top_icon {
+            get {
+                object obj = ResourceManager.GetObject("Actions_go_top_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Awicons_Vista_Artistic_Chart {
             get {
                 object obj = ResourceManager.GetObject("Awicons-Vista-Artistic-Chart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgd {
+            get {
+                object obj = ResourceManager.GetObject("bgd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgdnew {
+            get {
+                object obj = ResourceManager.GetObject("bgdnew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +126,16 @@ namespace THGL_Managment_System.Properties {
         internal static System.Drawing.Bitmap Custom_Icon_Design_Flatastic_4_Shopping_cart_insert {
             get {
                 object obj = ResourceManager.GetObject("Custom-Icon-Design-Flatastic-4-Shopping-cart-insert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Custom_Icon_Design_Pretty_Office_2_Create_ticket {
+            get {
+                object obj = ResourceManager.GetObject("Custom-Icon-Design-Pretty-Office-2-Create-ticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +306,16 @@ namespace THGL_Managment_System.Properties {
         internal static System.Drawing.Bitmap save_environment {
             get {
                 object obj = ResourceManager.GetObject("save-environment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ticket_add_icon {
+            get {
+                object obj = ResourceManager.GetObject("Ticket_add_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

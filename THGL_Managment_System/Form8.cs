@@ -27,8 +27,17 @@ namespace THGL_Managment_System
                     var editPelatis = tHGLdbEntities.Pelatis.Single(a => a.Kwdikos_Pelati == bunifuMaterialTextbox1.Text);
                     editPelatis.Onoma = bunifuMaterialTextbox2.Text;
                     editPelatis.Epitheto = bunifuMaterialTextbox3.Text;
+                    editPelatis.Hm_gennisis = Convert.ToDateTime(bunifuMaterialTextbox4.Text);
+                    editPelatis.Poli = bunifuMaterialTextbox5.Text;
+                    editPelatis.Tk = bunifuMaterialTextbox6.Text;
+                    editPelatis.Dieuthinsi = bunifuMaterialTextbox7.Text;
+                    editPelatis.Thlefwno = bunifuMaterialTextbox8.Text;
+                    editPelatis.Sxolia = bunifuMaterialTextbox9.Text;
+                    editPelatis.Pontoi = Convert.ToInt32(bunifuMaterialTextbox10.Text);
+                    
                     await tHGLdbEntities.SaveChangesAsync();
-
+                    MessageBox.Show("Επιτυχής ενημέρωσης", "Η ενημέρωση πραγματοποιήθηκε επιτυχώς!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.ClearForm();
                 }
             }
             catch (Exception ex)
@@ -39,15 +48,23 @@ namespace THGL_Managment_System
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-            using (THGLdbEntities tHGLdbEntities = new THGLdbEntities())
+           
+                using (THGLdbEntities tHGLdbEntities = new THGLdbEntities())
             {
                 var editPelatis = tHGLdbEntities.Pelatis.Single(a => a.Kwdikos_Pelati == bunifuMaterialTextbox1.Text);
                 bunifuMaterialTextbox2.Text = editPelatis.Onoma;
                 bunifuMaterialTextbox3.Text = editPelatis.Epitheto;
+                bunifuMaterialTextbox4.Text = Convert.ToString(editPelatis.Hm_gennisis);
+                bunifuMaterialTextbox5.Text = editPelatis.Poli;
+                bunifuMaterialTextbox6.Text = editPelatis.Tk;
+                bunifuMaterialTextbox7.Text = editPelatis.Dieuthinsi;
+                bunifuMaterialTextbox8.Text = editPelatis.Thlefwno;
+                bunifuMaterialTextbox9.Text = editPelatis.Sxolia;
+                bunifuMaterialTextbox10.Text = Convert.ToString(editPelatis.Pontoi);
                 //await tHGLdbEntities.SaveChangesAsync();
 
 
-                var pelates = tHGLdbEntities.Pelatis.OrderByDescending(a => a.getPoints()).ThenBy(a => a.Onoma).Take(10);
+                //var pelates = tHGLdbEntities.Pelatis.OrderByDescending(a => a.getPoints()).ThenBy(a => a.Onoma).Take(10);
                 //int? p = pelatis.Anakuklwnei.Sum(a => a.pontoi);
             }
         }

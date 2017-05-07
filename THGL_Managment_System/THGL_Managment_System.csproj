@@ -317,6 +317,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="map.png" />
+    <None Include="Resources\Background.gif" />
+    <Content Include="Resources\031521-environmental-benefits-recycling.gif" />
+    <Content Include="Resources\Actions-go-top-icon.png" />
+    <Content Include="Resources\bgd.jpg" />
+    <Content Include="Resources\bgdnew.jpg" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-go-top.ico" />
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-2-Create-ticket.ico" />
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-2-Create-ticket1.ico" />
+    <Content Include="Resources\Ticket-add-icon.png" />
+    <None Include="Resources\Ticket-add-icon1.png" />
     <Content Include="TESTMODEL\THGL.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>THGL.edmx</DependentUpon>
